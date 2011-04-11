@@ -1,0 +1,9 @@
+example:
+
+<?php
+require_once 'gweather.class.php';
+
+$wt = new gWeather;
+$data_weather = $wt->getData(array('cidade' => 'campo grande', 'pais' => 'brasil'));        
+echo $wt->getHtmlExample();
+?>
